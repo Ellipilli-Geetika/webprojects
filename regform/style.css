@@ -1,0 +1,88 @@
+*{box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+
+  background: url("back3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color:#fff;
+  font-size:20px;
+}
+header > center > h1{
+  color:#ee0;
+  text-shadow:2px 1px #aaa;
+  margin-bottom: 10px;
+}
+form{
+  width:50%;
+  height:95vh;
+  background-color: rgba(0,0,0,.2);
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px 5px #222;
+}
+form > div > img{
+  border-radius:50%;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+form > div label{
+  font-weight:bolder;
+  font-size:25px;
+
+}
+form > div label:hover{
+  font-weight: bold;
+  font-size:28px;
+
+}
+form > div >input{
+  width:80%;
+  background:rgba(0,0,0,.5);
+  color:white;
+  padding:10px 0 10px 0;
+  font-size:85%;
+  border-radius: 18px;
+  box-shadow:2px 2px #aaa;
+  outline:inherit;
+}
+form > div >input:hover{
+  background:rgba(0,0,0,.6);
+  border-radius: 23px;
+  box-shadow:5px 5px #fff;
+}
+form > div >button{
+  width:80%;
+  height:40px;
+  background-color:rgba(0,0,0,.8);
+  color:white;
+  box-shadow:2px 2px #eee;
+  border-radius: 20px;
+  font-size: 27px;
+  font-weight: bolder;
+}
+form > div >button:hover{
+
+  box-shadow:3px 3px #eee;
+  border-radius: 23px;
+  font-weight: bold;
+}
+
+
+
+
+@media (min-width:768px) and (max-width:991px){
+  form{
+    width:80%;
+  }
+}
+@media (max-width:769px){
+  form{
+    width:100%;
+  }
+  header > center > h1{
+    font-size: 35px;
+  }
+}
