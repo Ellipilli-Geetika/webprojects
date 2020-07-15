@@ -79,10 +79,10 @@ form > div >button:hover{
   }
 }
 @media (max-width:769px){
-  form{
-    width:100%;
-  }
-  header > center > h1{
-    font-size: 35px;
+  body{
+
+    background: rgba(0,0,0,.8);
+    color:#fff;
+    font-size:20px;
   }
 }
