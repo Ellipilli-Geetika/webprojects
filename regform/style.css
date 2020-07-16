@@ -7,7 +7,7 @@ body{
   background: url("back3.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-
+  background-attachment: fixed;
   color:#fff;
   font-size:20px;
 }
@@ -21,7 +21,7 @@ form{
   height:95vh;
   background-color: rgba(0,0,0,.2);
   margin-bottom: 10px;
-  box-shadow: 5px 5px 5px 5px #222;
+
 }
 form > div > img{
   border-radius:50%;
@@ -71,18 +71,22 @@ form > div >button:hover{
 }
 
 
-
+@media (min-width:992px){
+  form{
+      box-shadow: 5px 5px 5px 5px #222;
+  }
+}
 
 @media (min-width:768px) and (max-width:991px){
   form{
     width:80%;
+      box-shadow: 5px 5px 5px 5px #222;
   }
 }
 @media (max-width:769px){
-  body{
 
-    background: rgba(0,0,0,.8);
-    color:#fff;
-    font-size:20px;
+  form{
+    width:100%;
   }
+
 }
