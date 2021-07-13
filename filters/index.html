@@ -1,0 +1,27 @@
+<div class="container flex flex-center">
+	<div class="box-container grid grid-center">
+		<div class="main-box-image-canvas grid grid-gap">
+
+			<div class="box-canvas flex flex-center flex-s-b">
+				<canvas id="canvas_model" class="canvas-image" width=450 height=250></canvas>
+				<canvas id="canvas_edited" class="canvas-image" width=450 height=250></canvas>
+			</div>
+
+			<div class="box-textos flex flex-center flex-s-b">
+				<p class="texto-imagenes">Photo without filter</p>
+				<p class="texto-imagenes">Photo with filter </p>
+			</div>
+		</div>
+
+		<div class="box-buttons flex flex-center flex-s-b">
+
+			<div class="buttons flex flex-center flex-s-b">
+				<button class="btn-filter" id="normal" onclick="imageLoaded()">Normal</button>
+				<button class="btn-filter" id="invertido" onclick="imageLoaded(0)">Inverted </button>
+				<button class="btn-filter" id="grises" onclick="imageLoaded(1)">Grayscale </button>
+			</div>
+
+			<a id="download" class="btn-download" download="imagen.jpg" href="" onclick="download_img(this)">Download image</a>
+		</div>
+	</div>
+</div>

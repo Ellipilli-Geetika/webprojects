@@ -1,0 +1,105 @@
+$bg: hsl(0, 0%, 8%);
+$color: white;
+$padding: 0.25em 0.5em;
+$borde: 2px solid $color;
+$border-radius: 0.25em;
+$shadow: 0.1em 0.1em 0 $color;
+$gap: 1em;
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+p,
+a,
+button {
+	font-size: 1.25em;
+}
+
+.flex {
+	display: flex;
+
+	&-center {
+		justify-content: center;
+		align-items: center;
+	}
+	&-s-b {
+		justify-content: space-between;
+	}
+}
+
+.grid {
+	display: grid;
+
+	&-center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-gap {
+		grid-gap: $gap;
+	}
+}
+.container {
+	padding: 2em 3em;
+	width: 100%;
+	height: 100vh;
+	background-color: $bg;
+}
+
+.box-container {
+	grid-template-columns: 60em;
+	grid-template-rows: 22em 4em;
+}
+
+.canvas-image {
+	border: $borde;
+	border-radius: $border-radius;
+}
+
+.texto-imagenes {
+	color: $color;
+	padding: $padding;
+	border-bottom: $borde;
+
+	&:nth-child(1) {
+		border-left: $borde;
+		border-bottom-left-radius: $border-radius * 4;
+	}
+
+	&:nth-child(2) {
+		border-right: $borde;
+		border-bottom-right-radius: $border-radius * 4;
+	}
+}
+
+.buttons {
+	width: 22em;
+}
+
+[class^="btn-"] {
+	color: $color;
+	padding: $padding;
+	background-color: $bg;
+	border: $borde;
+	border-radius: $border-radius;
+	box-shadow: $shadow;
+	transition: 0.1s all ease;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:active {
+		transform: translate(0.1em, 0.1em);
+		box-shadow: none;
+	}
+}
